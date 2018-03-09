@@ -1,0 +1,14 @@
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\obj\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\EntityFramework.dll
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\EntityFramework.xml
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\CsvHelper.dll
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\CsvHelper.xml
+C:\Users\sguledagudda\Perforce\Test\ConsoleApp1\ConsoleApp2\bin\Debug\PhoneNumbers.dll

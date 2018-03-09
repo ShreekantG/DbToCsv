@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="m5dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="UspBossUserMigrationToUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="m5dbModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="m5dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="m5dbEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="UspBossUserMigrationToUC" ReturnType="Collection(m5dbModel.UspBossUserMigrationToUC_Result)" />
+        </EntityContainer>
+        <ComplexType Name="UspBossUserMigrationToUC_Result">
+          <Property Type="String" Name="uuid" Nullable="true" />
+          <Property Type="String" Name="username" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="first_name" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="last_name" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="status" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="salutation" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="title" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="department" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="tn" Nullable="true" MaxLength="8000" />
+          <Property Type="String" Name="extension" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="tenant_id" Nullable="true" />
+          <Property Type="String" Name="boss_profile_id" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="location_id" Nullable="true" />
+          <Property Type="DateTime" Name="date_created" Nullable="true" />
+          <Property Type="DateTime" Name="date_modified" Nullable="true" />
+          <Property Type="String" Name="business" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="home" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="cell" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="alt_1" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="alt_2" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="fax" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="businessemail" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="personal" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="altemail_1" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="altemail_2" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_type" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="address" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_2" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_3" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_4" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_5" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_6" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_7" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="address_8" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="city" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="state" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="country" Nullable="true" MaxLength="8000" />
+          <Property Type="String" Name="zip_code" Nullable="true" MaxLength="4000" />
+          <Property Type="Decimal" Name="latitude" Nullable="true" Precision="9" Scale="6" />
+          <Property Type="Decimal" Name="longitude" Nullable="true" Precision="9" Scale="6" />
+          <Property Type="String" Name="sub_premises" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="dependent_locality" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="name_on_door" Nullable="true" MaxLength="4000" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="m5dbModelStoreContainer" CdmEntityContainer="m5dbEntities" >
+          <FunctionImportMapping FunctionImportName="UspBossUserMigrationToUC" FunctionName="m5dbModel.Store.UspBossUserMigrationToUC">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="m5dbModel.UspBossUserMigrationToUC_Result">
+                <ScalarProperty Name="uuid" ColumnName="uuid" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="salutation" ColumnName="salutation" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="department" ColumnName="department" />
+                <ScalarProperty Name="tn" ColumnName="tn" />
+                <ScalarProperty Name="extension" ColumnName="extension" />
+                <ScalarProperty Name="tenant_id" ColumnName="tenant_id" />
+                <ScalarProperty Name="boss_profile_id" ColumnName="boss_profile_id" />
+                <ScalarProperty Name="location_id" ColumnName="location_id" />
+                <ScalarProperty Name="date_created" ColumnName="date_created" />
+                <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+                <ScalarProperty Name="business" ColumnName="business" />
+                <ScalarProperty Name="home" ColumnName="home" />
+                <ScalarProperty Name="cell" ColumnName="cell" />
+                <ScalarProperty Name="alt_1" ColumnName="alt_1" />
+                <ScalarProperty Name="alt_2" ColumnName="alt_2" />
+                <ScalarProperty Name="fax" ColumnName="fax" />
+                <ScalarProperty Name="businessemail" ColumnName="businessemail" />
+                <ScalarProperty Name="personal" ColumnName="personal" />
+                <ScalarProperty Name="altemail_1" ColumnName="altemail_1" />
+                <ScalarProperty Name="altemail_2" ColumnName="altemail_2" />
+                <ScalarProperty Name="address_type" ColumnName="address_type" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="address_2" ColumnName="address_2" />
+                <ScalarProperty Name="address_3" ColumnName="address_3" />
+                <ScalarProperty Name="address_4" ColumnName="address_4" />
+                <ScalarProperty Name="address_5" ColumnName="address_5" />
+                <ScalarProperty Name="address_6" ColumnName="address_6" />
+                <ScalarProperty Name="address_7" ColumnName="address_7" />
+                <ScalarProperty Name="address_8" ColumnName="address_8" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="sub_premises" ColumnName="sub_premises" />
+                <ScalarProperty Name="dependent_locality" ColumnName="dependent_locality" />
+                <ScalarProperty Name="name_on_door" ColumnName="name_on_door" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

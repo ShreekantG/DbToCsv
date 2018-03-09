@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="m5dbModelStoreContainer" CdmEntityContainer="m5dbEntities">
+    <FunctionImportMapping FunctionImportName="UspBossUserMigrationToUC" FunctionName="m5dbModel.Store.UspBossUserMigrationToUC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="m5dbModel.UspBossUserMigrationToUC_Result">
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="salutation" ColumnName="salutation" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="tn" ColumnName="tn" />
+          <ScalarProperty Name="extension" ColumnName="extension" />
+          <ScalarProperty Name="tenant_id" ColumnName="tenant_id" />
+          <ScalarProperty Name="boss_profile_id" ColumnName="boss_profile_id" />
+          <ScalarProperty Name="location_id" ColumnName="location_id" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="business" ColumnName="business" />
+          <ScalarProperty Name="home" ColumnName="home" />
+          <ScalarProperty Name="cell" ColumnName="cell" />
+          <ScalarProperty Name="alt_1" ColumnName="alt_1" />
+          <ScalarProperty Name="alt_2" ColumnName="alt_2" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="businessemail" ColumnName="businessemail" />
+          <ScalarProperty Name="personal" ColumnName="personal" />
+          <ScalarProperty Name="altemail_1" ColumnName="altemail_1" />
+          <ScalarProperty Name="altemail_2" ColumnName="altemail_2" />
+          <ScalarProperty Name="address_type" ColumnName="address_type" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="address_2" ColumnName="address_2" />
+          <ScalarProperty Name="address_3" ColumnName="address_3" />
+          <ScalarProperty Name="address_4" ColumnName="address_4" />
+          <ScalarProperty Name="address_5" ColumnName="address_5" />
+          <ScalarProperty Name="address_6" ColumnName="address_6" />
+          <ScalarProperty Name="address_7" ColumnName="address_7" />
+          <ScalarProperty Name="address_8" ColumnName="address_8" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="sub_premises" ColumnName="sub_premises" />
+          <ScalarProperty Name="dependent_locality" ColumnName="dependent_locality" />
+          <ScalarProperty Name="name_on_door" ColumnName="name_on_door" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

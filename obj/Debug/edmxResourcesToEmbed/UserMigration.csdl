@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="m5dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="m5dbEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="UspBossUserMigrationToUC" ReturnType="Collection(m5dbModel.UspBossUserMigrationToUC_Result)" />
+  </EntityContainer>
+  <ComplexType Name="UspBossUserMigrationToUC_Result">
+    <Property Type="String" Name="uuid" Nullable="true" />
+    <Property Type="String" Name="username" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="first_name" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="last_name" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="status" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="salutation" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="title" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="department" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="tn" Nullable="true" MaxLength="8000" />
+    <Property Type="String" Name="extension" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="tenant_id" Nullable="true" />
+    <Property Type="String" Name="boss_profile_id" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="location_id" Nullable="true" />
+    <Property Type="DateTime" Name="date_created" Nullable="true" />
+    <Property Type="DateTime" Name="date_modified" Nullable="true" />
+    <Property Type="String" Name="business" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="home" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="cell" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="alt_1" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="alt_2" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="fax" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="businessemail" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="personal" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="altemail_1" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="altemail_2" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_type" Nullable="false" MaxLength="9" />
+    <Property Type="String" Name="address" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_2" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_3" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_4" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_5" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_6" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_7" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="address_8" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="city" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="state" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="country" Nullable="true" MaxLength="8000" />
+    <Property Type="String" Name="zip_code" Nullable="true" MaxLength="4000" />
+    <Property Type="Decimal" Name="latitude" Nullable="true" Precision="9" Scale="6" />
+    <Property Type="Decimal" Name="longitude" Nullable="true" Precision="9" Scale="6" />
+    <Property Type="String" Name="sub_premises" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="dependent_locality" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="name_on_door" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+</Schema>
